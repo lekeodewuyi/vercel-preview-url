@@ -18,6 +18,7 @@ export default async function getDeploymentUrl(
   }
   const qs = querystring.stringify(query)
 
+  core.info(`branch: ${branch}`)
   core.info(`Fetching from: ${apiUrl}${deploymentsUrl}?${qs}`)
   const { data } = await axios.get(`${apiUrl}${deploymentsUrl}?${qs}`, {
     headers: {
