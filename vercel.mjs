@@ -13,7 +13,7 @@ export default async function getDeploymentUrl(
   projectId
 ) {
   const query = {
-    teamId,
+//     teamId,
     projectId
   }
   const qs = querystring.stringify(query)
